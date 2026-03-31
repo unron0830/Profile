@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects｜Yu-En Yang</title>
+  <script>(function(){var t=localStorage.getItem('theme')||'light';document.documentElement.setAttribute('data-bs-theme',t);}());</script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg site-nav sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">Yu-En Yang</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="research.html">Research</a></li>
+        <li class="nav-item"><a class="nav-link" href="publications.html">Publications</a></li>
+        <li class="nav-item"><a class="nav-link active" href="projects.html">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="honors.html">Honors</a></li>
+        <li class="nav-item"><a class="nav-link" href="teaching.html">Teaching</a></li>
+        <li class="nav-item"><a class="nav-link" href="opportunities.html">Opportunities</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+      <div class="ms-3 d-flex gap-1">
+        <button class="btn btn-sm btn-ghost" data-lang-btn="zh">中</button>
+        <button class="btn btn-sm btn-ghost" data-lang-btn="en">EN</button>
+        <button class="btn btn-sm btn-ghost" id="themeToggle">🌙</button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<main class="main-content">
+  <div class="container">
+
+    <!-- ZH Block -->
+    <div data-lang-block="zh">
+      <div class="d-flex flex-wrap align-items-center justify-content-between mb-3 gap-2">
+        <div>
+          <div class="smallcaps mb-1">Projects</div>
+          <h2 class="h3 fw-bold mb-0">專案成果</h2>
+          <p class="text-muted2 mt-1 mb-0">遙測 &times; AI &times; WebGIS</p>
+        </div>
+        <div class="d-flex gap-1">
+          <button class="btn btn-sm btn-ghost" data-budget-btn="show">顯示計畫經費</button>
+          <button class="btn btn-sm btn-ghost active" data-budget-btn="hide">隱藏計畫經費</button>
+        </div>
+      </div>
+
+      <div class="row g-4 mb-4">
+
+        <!-- 石綿系統 -->
+        <div class="col-md-6 col-lg-4" id="asbestos">
+          <div class="cardx p-3 h-100">
+            <img src="assets/img/project/石綿系統.png" alt="石綿建材管理系統" class="proj-thumb mb-3" />
+            <div class="smallcaps">WebGIS / AI</div>
+            <h5 class="fw-bold mb-1">石綿建材普查與管理系統建置</h5>
+            <p class="proj-meta mb-1">2021–2025</p>
+            <p class="small text-muted2 mb-2">
+              結合高解析衛星影像與深度學習，建立全國石綿瓦屋頂辨識與 WebGIS 管理系統，
+              提供環保主管機關查詢與管理介面。
+            </p>
+            <div data-budget class="small text-muted2 mb-2" style="display:none;">
+              <i class="bi bi-cash-stack me-1"></i>計畫經費：保密
+            </div>
+            <div class="d-flex gap-2 flex-wrap">
+              <span class="badge-soft">YOLO</span>
+              <span class="badge-soft">WebGIS</span>
+              <span class="badge-soft">衛星影像</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- AI石綿瓦辨識 -->
+        <div class="col-md-6 col-lg-4" id="ai-asbestos">
+          <div class="cardx p-3 h-100">
+            <img src="assets/img/project/2p5w1-tj5ws.gif" alt="石綿瓦辨識AI" class="proj-thumb mb-3" />
+            <div class="smallcaps">YOLO / CNN</div>
+            <h5 class="fw-bold mb-1">石綿瓦辨識 AI</h5>
+            <p class="proj-meta mb-1">2024–2025</p>
+            <p class="small text-muted2 mb-2">
+              利用 YOLOv8 與 CNN 模型進行石綿波浪板屋頂之高精度自動辨識，
+              並整合多期影像進行變遷偵測與普查更新。
+            </p>
+            <div data-budget class="small text-muted2 mb-2" style="display:none;">
+              <i class="bi bi-cash-stack me-1"></i>計畫經費：保密
+            </div>
+            <div class="d-flex gap-2 flex-wrap">
+              <span class="badge-soft">YOLOv8</span>
+              <span class="badge-soft">CNN</span>
+              <span class="badge-soft">變遷偵測</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- GBSAR -->
+        <div class="col-md-6 col-lg-4" id="gbsar">
+          <div class="cardx p-3 h-100">
+            <img src="assets/img/project/GBSAR.png" alt="GBSAR邊坡監測" class="proj-thumb mb-3" />
+            <div class="smallcaps">GBSAR / 預警系統</div>
+            <h5 class="fw-bold mb-1">水保局：邊坡崩塌預警系統</h5>
+            <p class="proj-meta mb-1">109–113年度</p>
+            <p class="small text-muted2 mb-2">
+              建置地面差分干涉雷達（GBSAR）監測系統，結合自動化資料處理流程與預警門檻，
+              提供即時邊坡位移監控與崩塌預警服務。
+            </p>
+            <div data-budget class="small text-muted2 mb-2" style="display:none;">
+              <i class="bi bi-cash-stack me-1"></i>計畫經費：保密
+            </div>
+            <div class="d-flex gap-2 flex-wrap">
+              <span class="badge-soft">GBSAR</span>
+              <span class="badge-soft">InSAR</span>
+              <span class="badge-soft">預警系統</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 國土利用監測 -->
+        <div class="col-md-6 col-lg-4" id="national-land">
+          <div class="cardx p-3 h-100">
+            <img src="assets/img/project/五水庫.jpg" alt="國土利用監測崩塌地" class="proj-thumb mb-3" />
+            <div class="smallcaps">GEE / 機器學習</div>
+            <h5 class="fw-bold mb-1">國土利用監測：崩塌地面積判釋</h5>
+            <p class="proj-meta mb-1">113年度</p>
+            <p class="small text-muted2 mb-2">
+              利用 Google Earth Engine 結合隨機森林與深度學習，
+              自動化判釋五大水庫集水區崩塌地面積，支援國土變遷監測業務。
+            </p>
+            <div data-budget class="small text-muted2 mb-2" style="display:none;">
+              <i class="bi bi-cash-stack me-1"></i>計畫經費：保密
+            </div>
+            <div class="d-flex gap-2 flex-wrap">
+              <span class="badge-soft">GEE</span>
+              <span class="badge-soft">Random Forest</span>
+              <span class="badge-soft">崩塌地</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 濕地 -->
+        <div class="col-md-6 col-lg-4" id="wetland">
+          <div class="cardx p-3 h-100">
+            <img src="assets/img/project/築巢分布日變化0429-0701.gif" alt="青螺濕地監測" class="proj-thumb mb-3" />
+            <div class="smallcaps">生態遙測</div>
+            <h5 class="fw-bold mb-1">107–108年度青螺重要濕地（國家級）生態調查</h5>
+            <p class="proj-meta mb-1">2018–2019</p>
+            <p class="small text-muted2 mb-2">
+              結合空拍影像與現地調查，監測青螺國家重要濕地內水鳥族群分布與棲地利用，
+              提供保育管理決策依據。
+            </p>
+            <div data-budget class="small text-muted2 mb-2" style="display:none;">
+              <i class="bi bi-cash-stack me-1"></i>計畫經費：保密
+            </div>
+            <div class="d-flex gap-2 flex-wrap">
+              <span class="badge-soft">UAV</span>
+              <span class="badge-soft">生態調查</span>
+              <span class="badge-soft">濕地</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 布袋港 -->
+        <div class="col-md-6 col-lg-4" id="port">
+          <div class="cardx p-3 h-100">
+            <img src="assets/img/project/布袋港.png" alt="布袋港太陽光電可行性" class="proj-thumb mb-3" />
+            <div class="smallcaps">GIS 規劃分析</div>
+            <h5 class="fw-bold mb-1">臺灣港務：布袋商港太陽光電與纜車可行性</h5>
+            <p class="proj-meta mb-1">112年度</p>
+            <p class="small text-muted2 mb-2">
+              針對布袋商港進行太陽光電設置潛力評估及纜車系統可行性分析，
+              結合 GIS 空間分析提供港區開發建議。
+            </p>
+            <div data-budget class="small text-muted2 mb-2" style="display:none;">
+              <i class="bi bi-cash-stack me-1"></i>計畫經費：保密
+            </div>
+            <div class="d-flex gap-2 flex-wrap">
+              <span class="badge-soft">GIS</span>
+              <span class="badge-soft">可行性分析</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 海岸環境 -->
+        <div class="col-md-6 col-lg-4" id="coastal">
+          <div class="cardx p-3 h-100">
+            <img src="assets/img/project/水利基金會.png" alt="海岸環境規劃" class="proj-thumb mb-3" />
+            <div class="smallcaps">海岸規劃</div>
+            <h5 class="fw-bold mb-1">海岸環境營造與防護規劃</h5>
+            <p class="proj-meta mb-1">107–108年度</p>
+            <p class="small text-muted2 mb-2">
+              執行海岸環境現況調查與防護規劃，整合遙測影像、海岸地形與水文資料，
+              提供海岸保育與管理策略建議。
+            </p>
+            <div data-budget class="small text-muted2 mb-2" style="display:none;">
+              <i class="bi bi-cash-stack me-1"></i>計畫經費：保密
+            </div>
+            <div class="d-flex gap-2 flex-wrap">
+              <span class="badge-soft">海岸地形</span>
+              <span class="badge-soft">遙測</span>
+              <span class="badge-soft">水文</span>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /row -->
+
+      <!-- Archive -->
+      <div class="mb-3">
+        <button class="btn btn-ghost" type="button" data-bs-toggle="collapse" data-bs-target="#archiveZh" aria-expanded="false">
+          <i class="bi bi-archive me-1"></i>其他舊版計畫（點擊展開）
+        </button>
+        <div class="collapse mt-3" id="archiveZh">
+          <div class="cardx p-4">
+            <div class="smallcaps">歷史計畫</div>
+            <hr class="divider" />
+            <ul class="mb-0">
+              <li>102–103年度 農委會水土保持局委託研究計畫</li>
+              <li>103–104年度 台糖農地作物辨識遙測分析</li>
+              <li>104–105年度 林務局植被監測計畫</li>
+              <li>105–106年度 地方政府GIS圖資整合計畫</li>
+              <li>106–107年度 農業部農地利用調查計畫</li>
+              <li>107年度 國家災害防救科技中心研究合作計畫</li>
+              <li>108年度 臺南市政府空間資料更新計畫</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /zh -->
+
+    <!-- EN Block -->
+    <div data-lang-block="en">
+      <div class="d-flex flex-wrap align-items-center justify-content-between mb-3 gap-2">
+        <div>
+          <div class="smallcaps mb-1">Projects</div>
+          <h2 class="h3 fw-bold mb-0">Project Portfolio</h2>
+          <p class="text-muted2 mt-1 mb-0">Remote Sensing &times; AI &times; WebGIS</p>
+        </div>
+        <div class="d-flex gap-1">
+          <button class="btn btn-sm btn-ghost" data-budget-btn="show">Show Budget</button>
+          <button class="btn btn-sm btn-ghost active" data-budget-btn="hide">Hide Budget</button>
+        </div>
+      </div>
+
+      <div class="row g-4 mb-4">
+
+        <!-- Asbestos System -->
+        <div class="col-md-6 col-lg-4">
+          <div class="cardx p-3 h-100">
+            <img src="assets/img/project/石綿系統.png" alt="Asbestos Management System" class="proj-thumb mb-3" />
+            <div class="smallcaps">WebGIS / AI</div>
+            <h5 class="fw-bold mb-1">Asbestos Building Material Survey &amp; Management System</h5>
+            <p class="proj-meta mb-1">2021–2025</p>
+            <p class="small text-muted2 mb-2">
+              Combining high-resolution satellite imagery and deep learning to build a national
+              asbestos roof detection and WebGIS management system for environmental authorities.
+            </p>
+            <div data-budget class="small text-muted2 mb-2" style="display:none;">
+              <i class="bi bi-cash-stack me-1"></i>Budget: Confidential
+            </div>
+            <div class="d-flex gap-2 flex-wrap">
+              <span class="badge-soft">YOLO</span>
+              <span class="badge-soft">WebGIS</span>
+              <span class="badge-soft">Satellite Imagery</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- AI Asbestos Detection -->
+        <div class="col-md-6 col-lg-4">
+          <div class="cardx p-3 h-100">
+            <img src="assets/img/project/2p5w1-tj5ws.gif" alt="Asbestos AI Detection" class="proj-thumb mb-3" />
+            <div class="smallcaps">YOLO / CNN</div>
+            <h5 class="fw-bold mb-1">Asbestos Roof Detection AI</h5>
+            <p class="proj-meta mb-1">2024–2025</p>
+            <p class="small text-muted2 mb-2">
+              High-accuracy automated detection of asbestos corrugated roofing using YOLOv8 and CNN,
+              with multi-temporal change detection for survey updates.
+            </p>
+            <div data-budget class="small text-muted2 mb-2" style="display:none;">
+              <i class="bi bi-cash-stack me-1"></i>Budget: Confidential
+            </div>
+            <div class="d-flex gap-2 flex-wrap">
+              <span class="badge-soft">YOLOv8</span>
+              <span class="badge-soft">CNN</span>
+              <span class="badge-soft">Change Detection</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- GBSAR -->
+        <div class="col-md-6 col-lg-4">
+          <div class="cardx p-3 h-100">
+            <img src="assets/img/project/GBSAR.png" alt="GBSAR Slope Monitoring" class="proj-thumb mb-3" />
+            <div class="smallcaps">GBSAR / Early Warning</div>
+            <h5 class="fw-bold mb-1">SWCB: Slope Failure Early Warning System</h5>
+            <p class="proj-meta mb-1">2020–2024</p>
+            <p class="small text-muted2 mb-2">
+              Ground-Based SAR monitoring system with automated data processing and warning
+              thresholds for real-time slope displacement monitoring and landslide early warning.
+            </p>
+            <div data-budget class="small text-muted2 mb-2" style="display:none;">
+              <i class="bi bi-cash-stack me-1"></i>Budget: Confidential
+            </div>
+            <div class="d-flex gap-2 flex-wrap">
+              <span class="badge-soft">GBSAR</span>
+              <span class="badge-soft">InSAR</span>
+              <span class="badge-soft">Early Warning</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- National Land Monitoring -->
+        <div class="col-md-6 col-lg-4">
+          <div class="cardx p-3 h-100">
+            <img src="assets/img/project/五水庫.jpg" alt="National Land Monitoring" class="proj-thumb mb-3" />
+            <div class="smallcaps">GEE / Machine Learning</div>
+            <h5 class="fw-bold mb-1">National Land Monitoring: Landslide Area Mapping</h5>
+            <p class="proj-meta mb-1">2024</p>
+            <p class="small text-muted2 mb-2">
+              Automated landslide area mapping for five reservoir watersheds using Google Earth Engine
+              with Random Forest and deep learning for national land change monitoring.
+            </p>
+            <div data-budget class="small text-muted2 mb-2" style="display:none;">
+              <i class="bi bi-cash-stack me-1"></i>Budget: Confidential
+            </div>
+            <div class="d-flex gap-2 flex-wrap">
+              <span class="badge-soft">GEE</span>
+              <span class="badge-soft">Random Forest</span>
+              <span class="badge-soft">Landslide</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Wetland -->
+        <div class="col-md-6 col-lg-4">
+          <div class="cardx p-3 h-100">
+            <img src="assets/img/project/築巢分布日變化0429-0701.gif" alt="Wetland Survey" class="proj-thumb mb-3" />
+            <div class="smallcaps">Ecological Remote Sensing</div>
+            <h5 class="fw-bold mb-1">Qinglu National Wetland Ecological Survey (2018–2019)</h5>
+            <p class="proj-meta mb-1">2018–2019</p>
+            <p class="small text-muted2 mb-2">
+              Monitoring waterbird population distribution and habitat use in the Qinglu National
+              Important Wetland using UAV imagery and field surveys.
+            </p>
+            <div data-budget class="small text-muted2 mb-2" style="display:none;">
+              <i class="bi bi-cash-stack me-1"></i>Budget: Confidential
+            </div>
+            <div class="d-flex gap-2 flex-wrap">
+              <span class="badge-soft">UAV</span>
+              <span class="badge-soft">Ecology</span>
+              <span class="badge-soft">Wetland</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Port -->
+        <div class="col-md-6 col-lg-4">
+          <div class="cardx p-3 h-100">
+            <img src="assets/img/project/布袋港.png" alt="Budai Port Solar Feasibility" class="proj-thumb mb-3" />
+            <div class="smallcaps">GIS Planning</div>
+            <h5 class="fw-bold mb-1">Taiwan Ports: Budai Port Solar &amp; Cable Car Feasibility</h5>
+            <p class="proj-meta mb-1">2023</p>
+            <p class="small text-muted2 mb-2">
+              Solar power installation potential assessment and cable car system feasibility analysis
+              for Budai Commercial Port using GIS spatial analysis.
+            </p>
+            <div data-budget class="small text-muted2 mb-2" style="display:none;">
+              <i class="bi bi-cash-stack me-1"></i>Budget: Confidential
+            </div>
+            <div class="d-flex gap-2 flex-wrap">
+              <span class="badge-soft">GIS</span>
+              <span class="badge-soft">Feasibility</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Coastal -->
+        <div class="col-md-6 col-lg-4">
+          <div class="cardx p-3 h-100">
+            <img src="assets/img/project/水利基金會.png" alt="Coastal Planning" class="proj-thumb mb-3" />
+            <div class="smallcaps">Coastal Planning</div>
+            <h5 class="fw-bold mb-1">Coastal Environment Development &amp; Protection Planning</h5>
+            <p class="proj-meta mb-1">2018–2019</p>
+            <p class="small text-muted2 mb-2">
+              Coastal environment survey and protection planning integrating remote sensing,
+              coastal topography, and hydrological data for conservation and management strategies.
+            </p>
+            <div data-budget class="small text-muted2 mb-2" style="display:none;">
+              <i class="bi bi-cash-stack me-1"></i>Budget: Confidential
+            </div>
+            <div class="d-flex gap-2 flex-wrap">
+              <span class="badge-soft">Coastal</span>
+              <span class="badge-soft">Remote Sensing</span>
+              <span class="badge-soft">Hydrology</span>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /row -->
+
+      <!-- Archive -->
+      <div class="mb-3">
+        <button class="btn btn-ghost" type="button" data-bs-toggle="collapse" data-bs-target="#archiveEn" aria-expanded="false">
+          <i class="bi bi-archive me-1"></i>Archived Projects (click to expand)
+        </button>
+        <div class="collapse mt-3" id="archiveEn">
+          <div class="cardx p-4">
+            <div class="smallcaps">Historical Projects</div>
+            <hr class="divider" />
+            <ul class="mb-0">
+              <li>2013–2014 Soil &amp; Water Conservation Bureau commissioned research</li>
+              <li>2014–2015 Taiwan Sugar Corporation agricultural land crop recognition</li>
+              <li>2015–2016 Forestry Bureau vegetation monitoring</li>
+              <li>2016–2017 Local government GIS data integration</li>
+              <li>2017–2018 Council of Agriculture farmland use survey</li>
+              <li>2018 National Science and Technology Center for Disaster Reduction collaborative research</li>
+              <li>2019 Tainan City Government spatial data update</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /en -->
+
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    &copy; 2026 Yu-En Yang &middot; Powered by GitHub Pages
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

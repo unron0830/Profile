@@ -1,0 +1,172 @@
+/* === BASE === */
+*, *::before, *::after { box-sizing: border-box; }
+
+:root {
+  --accent: #2563eb;
+  --accent-hover: #1d4ed8;
+  --muted: #6b7280;
+  --card-bg: #ffffff;
+  --card-border: #e5e7eb;
+  --body-bg: #f9fafb;
+  --body-text: #111827;
+  --nav-bg: #ffffff;
+}
+
+[data-bs-theme="dark"] {
+  --card-bg: #1f2937;
+  --card-border: #374151;
+  --body-bg: #111827;
+  --body-text: #f9fafb;
+  --nav-bg: #1f2937;
+  --muted: #9ca3af;
+}
+
+body {
+  background: var(--body-bg);
+  color: var(--body-text);
+  font-family: 'Noto Sans TC', system-ui, -apple-system, sans-serif;
+  min-height: 100vh;
+}
+
+/* === NAVBAR === */
+.site-nav {
+  background: var(--nav-bg) !important;
+  border-bottom: 1px solid var(--card-border);
+}
+.site-nav .navbar-brand { font-weight: 700; }
+.site-nav .nav-link { font-size: .9rem; }
+.site-nav .nav-link.active { font-weight: 600; color: var(--accent) !important; }
+
+/* === CARD === */
+.cardx {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: .5rem;
+  margin-bottom: 1rem;
+}
+
+/* === TYPOGRAPHY === */
+.text-muted2 { color: var(--muted); }
+
+.smallcaps {
+  font-size: .65rem;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: .25rem;
+}
+
+/* === DIVIDER === */
+.divider {
+  border: none;
+  border-top: 1px solid var(--card-border);
+  margin: 1.75rem 0;
+}
+
+/* === BUTTONS === */
+.btn-ghost {
+  background: transparent;
+  border: 1px solid var(--card-border);
+  color: var(--body-text);
+  border-radius: .375rem;
+  padding: .25rem .75rem;
+  font-size: .875rem;
+  cursor: pointer;
+  transition: background .15s;
+  line-height: 1.5;
+}
+.btn-ghost:hover, .btn-ghost.active {
+  background: var(--card-border);
+  color: var(--body-text);
+}
+
+.btn-accent {
+  background: var(--accent);
+  color: #fff !important;
+  border: none;
+  padding: .5rem 1.25rem;
+  border-radius: .375rem;
+  text-decoration: none;
+  display: inline-block;
+  font-size: .9rem;
+  transition: background .15s;
+}
+.btn-accent:hover { background: var(--accent-hover); }
+
+/* === BADGES === */
+.badge-soft {
+  display: inline-block;
+  background: #dbeafe;
+  color: #1e40af;
+  padding: .15em .6em;
+  border-radius: 9999px;
+  font-size: .72rem;
+  font-weight: 600;
+}
+.badge-soft2 {
+  display: inline-block;
+  background: #dcfce7;
+  color: #166534;
+  padding: .15em .6em;
+  border-radius: 9999px;
+  font-size: .72rem;
+  font-weight: 600;
+}
+
+/* === PROJECTS === */
+.proj-thumb {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: .375rem;
+  display: block;
+}
+.proj-meta {
+  font-size: .75rem;
+  color: var(--muted);
+}
+
+/* === AWARDS === */
+.award-img-wrap { max-width: 480px; }
+.award-img-wrap img {
+  max-width: 100%;
+  border-radius: .375rem;
+  max-height: 320px;
+  object-fit: contain;
+}
+
+/* === HERO === */
+.lab-hero-icon {
+  max-width: 120px;
+  max-height: 120px;
+  object-fit: contain;
+}
+
+/* === COPY LINK === */
+.copy-link {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px dashed var(--muted);
+}
+.copy-link:hover { color: var(--accent); border-bottom-color: var(--accent); }
+
+/* === SEPARATOR === */
+.sep { margin: 0 .4rem; color: var(--muted); }
+
+/* === MAIN === */
+.main-content {
+  min-height: calc(100vh - 130px);
+  padding: 2.5rem 0;
+}
+
+/* === FOOTER === */
+footer {
+  border-top: 1px solid var(--card-border);
+  color: var(--muted);
+  font-size: .8rem;
+  padding: 1.5rem 0;
+  text-align: center;
+  background: var(--nav-bg);
+}
