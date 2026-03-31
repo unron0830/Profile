@@ -1,16 +1,18 @@
-﻿:root { --bg:#f7f8fb; --card:#fff; --text:#1f2937; --muted:#6b7280; --line:#e5e7eb; --brand:#0f766e; }
+﻿:root { --bg:#f7f8fb; --card:#fff; --text:#1f2937; --muted:#6b7280; --line:#e5e7eb; --brand:#111827; --primary:#2563eb; }
 *{box-sizing:border-box}
 body{margin:0;font-family:"Noto Sans TC","Segoe UI",sans-serif;background:var(--bg);color:var(--text)}
 .container{max-width:1080px;margin:0 auto;padding:1.2rem}
 .topbar{position:sticky;top:0;z-index:20;background:#ffffffd9;backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
 .topbar .container{display:flex;flex-wrap:wrap;gap:.8rem;align-items:center;justify-content:space-between}
 .brand{font-weight:800;color:var(--brand);text-decoration:none}
-.nav{display:flex;gap:.4rem;flex-wrap:wrap}
-.nav a{text-decoration:none;color:var(--text);padding:.35rem .6rem;border:1px solid transparent;border-radius:.45rem;font-size:.92rem}
-.nav a.active{border-color:var(--line);background:#f3f4f6}
-.tools{display:flex;gap:.4rem;align-items:center}
-button.lang-btn,button.budget-btn{border:1px solid var(--line);background:#fff;color:var(--text);border-radius:.45rem;padding:.25rem .55rem;cursor:pointer}
-button.active{background:#eef2ff;border-color:#c7d2fe}
+.nav{display:flex;gap:.35rem;flex-wrap:wrap}
+.nav a,.nav .nav-link{text-decoration:none;color:var(--text);padding:.35rem .45rem;border:1px solid transparent;border-radius:.45rem;font-size:1.02rem;font-weight:500;line-height:1.25}
+.nav a.active,.nav .nav-link.active{color:var(--primary);background:transparent;border-color:transparent}
+.tools{display:flex;gap:0;align-items:center}
+button.lang-btn,button.budget-btn{border:1px solid var(--line);background:#fff;color:var(--text);border-radius:.7rem;padding:.45rem .95rem;cursor:pointer;font-size:.95rem}
+button.lang-btn:first-child{border-top-right-radius:0;border-bottom-right-radius:0}
+button.lang-btn:last-child{border-top-left-radius:0;border-bottom-left-radius:0;margin-left:-1px}
+button.active{background:#dbeafe;border-color:#bfdbfe;color:#1d4ed8}
 main{padding:1rem 0 2rem}
 .cardx{background:var(--card);border:1px solid var(--line);border-radius:.8rem;padding:1rem;margin-bottom:1rem}
 .smallcaps{color:var(--muted);font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;font-weight:700}
