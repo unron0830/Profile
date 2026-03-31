@@ -1,209 +1,293 @@
-<!DOCTYPE html>
+﻿<!doctype html>
 <html lang="zh-TW">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About｜Yu-En Yang</title>
-  <script>(function(){var t=localStorage.getItem('theme')||'light';document.documentElement.setAttribute('data-bs-theme',t);}());</script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" />
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>index - Yu-En Yang</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-
-<nav class="navbar navbar-expand-lg site-nav sticky-top">
-  <div class="container">
-    <a class="navbar-brand fw-bold" href="index.html">Yu-En Yang</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navMenu">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link active" href="index.html">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="research.html">Research</a></li>
-        <li class="nav-item"><a class="nav-link" href="publications.html">Publications</a></li>
-        <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-        <li class="nav-item"><a class="nav-link" href="honors.html">Honors</a></li>
-        <li class="nav-item"><a class="nav-link" href="teaching.html">Teaching</a></li>
-        <li class="nav-item"><a class="nav-link" href="opportunities.html">Opportunities</a></li>
-        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-      </ul>
-      <div class="ms-3 d-flex gap-1">
-        <button class="btn btn-sm btn-ghost" data-lang-btn="zh">中</button>
-        <button class="btn btn-sm btn-ghost" data-lang-btn="en">EN</button>
-        <button class="btn btn-sm btn-ghost" id="themeToggle">🌙</button>
+  <header class="topbar">
+    <div class="container">
+      <a class="brand" href="index.html">Yu-En Yang</a>
+      <nav class="nav">
+<a href='index.html' class="active">About</a>
+<a href='research.html'>Research</a>
+<a href='publications.html'>Publications</a>
+<a href='projects.html'>Projects</a>
+<a href='honors.html'>Honors</a>
+<a href='teaching.html'>Teaching</a>
+<a href='opportunities.html'>Opportunities</a>
+<a href='contact.html'>Contact</a>
+      </nav>
+      <div class="tools">
+        <button class="lang-btn" data-lang-btn="zh">中文</button>
+        <button class="lang-btn" data-lang-btn="en">EN</button>
       </div>
     </div>
-  </div>
-</nav>
+  </header>
+  <main>
+    <div class="container">
+<div class="py-5">
 
-<main class="main-content">
-  <div class="container">
+   
 
-    <!-- ZH Block -->
     <div data-lang-block="zh">
-      <div class="cardx p-4 mb-4">
-        <div class="row align-items-center g-4">
-          <div class="col-md-3 text-center">
-            <img src="assets/img/profile1.jpg" alt="楊宇恩" class="img-fluid rounded-circle" style="max-width:180px;" />
-          </div>
-          <div class="col-md-7">
-            <div class="smallcaps">About</div>
-            <h1 class="h2 fw-bold mb-1">楊宇恩</h1>
-            <p class="lead mb-1">博士（資源工程）</p>
-            <p class="text-muted2 mb-3">NCKU 衛星資訊中心</p>
-            <p class="mb-3">
-              專長於機器學習／電腦視覺、遙測影像分析、WebGIS 系統開發，
-              以及深度學習應用於環境監測。研究涵蓋山崩變動監測、石綿建材辨識、
-              邊坡位移預警等議題，並具備完整的 GIS 資料處理與分析能力。
-            </p>
-            <div class="d-flex flex-wrap align-items-center gap-2">
-              <span><i class="bi bi-geo-alt"></i> 臺南</span>
-              <span class="sep">·</span>
-              <a class="copy-link" href="#" data-copy="yuenyang@example.com">
-                <i class="bi bi-envelope"></i> Email（點擊複製）
-              </a>
-              <span class="sep">·</span>
-              <a href="https://orcid.org/0000-0002-0000-0000" target="_blank" class="text-decoration-none">
-                <i class="bi bi-person-badge"></i> ORCID
-              </a>
-              <span class="sep">·</span>
-              <a href="https://scholar.google.com/" target="_blank" class="text-decoration-none">
-                <i class="bi bi-mortarboard"></i> Google Scholar
-              </a>
+
+    <section class="mb-5">
+        <div class="row">
+            <!-- 左：照片 -->
+            <div class="col-md-3 justify-content-center text-center mb-3 mb-md-0">
+                <img src="assets/img/profile1.jpg"
+                     alt="Yu-En Yang"
+                     class="img-fluid rounded"
+                     style="max-width:240px; max-height:240px; object-fit:contain;">
             </div>
-          </div>
-          <div class="col-md-2 text-center">
-            <img src="assets/img/logo.png" alt="Lab Logo" class="lab-hero-icon" />
-          </div>
-        </div>
-      </div>
 
-      <div class="row g-4">
-        <div class="col-md-6">
-          <div class="cardx p-4 h-100">
-            <div class="smallcaps">核心技術能力</div>
-            <hr class="divider" />
-            <ul class="mb-0">
-              <li>機器學習 / 深度學習（YOLO、CNN、cGAN）</li>
-              <li>Python、R、JavaScript、SQL 程式開發</li>
-              <li>遙測影像分析與 GIS 空間資料處理</li>
-              <li>WebGIS 系統建置（GeoServer、Leaflet、OpenLayers）</li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="cardx p-4 h-100">
-            <div class="smallcaps">代表性專案</div>
-            <hr class="divider" />
-            <ul class="mb-0">
-              <li>石綿建材普查 AI 辨識與 WebGIS 管理系統（2021–2025）</li>
-              <li>條件生成對抗網路（cGAN）應用於山崩位移量估算</li>
-              <li>水保局 GBSAR 邊坡崩塌位移監測與預警系統（109–113）</li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-12">
-          <div class="cardx p-4">
-            <div class="smallcaps">現職經歷</div>
-            <hr class="divider" />
-            <ul class="mb-0">
-              <li>國立成功大學 衛星資訊研究中心 ─ 研究助理（2020 年至今）</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div><!-- /zh -->
+            <!-- 中：文字內容 -->
+            <div class="col-md-7">
+                <h1 class="fw-bold mb-2">楊宇恩</h1>
+                <p class="lead text-muted mb-1">
+                    博士（資源工程）
+                </p>
+                <p class="mb-2">國立成功大學 衛星資訊中心</p>
 
-    <!-- EN Block -->
-    <div data-lang-block="en">
-      <div class="cardx p-4 mb-4">
-        <div class="row align-items-center g-4">
-          <div class="col-md-3 text-center">
-            <img src="assets/img/profile1.jpg" alt="Yu-En Yang" class="img-fluid rounded-circle" style="max-width:180px;" />
-          </div>
-          <div class="col-md-7">
-            <div class="smallcaps">About</div>
-            <h1 class="h2 fw-bold mb-1">Yu-En Yang</h1>
-            <p class="lead mb-1">Ph.D. in Resource Engineering (Jan 2026)</p>
-            <p class="text-muted2 mb-3">Satellite Information Research Center, NCKU</p>
-            <p class="mb-3">
-              Specializing in machine learning / computer vision, remote sensing image analysis,
-              WebGIS system development, and deep learning applications for environmental monitoring.
-              Research covers landslide displacement monitoring, asbestos material detection,
-              slope failure early warning systems, and comprehensive GIS data processing.
-            </p>
-            <div class="d-flex flex-wrap align-items-center gap-2">
-              <span><i class="bi bi-geo-alt"></i> Tainan, Taiwan</span>
-              <span class="sep">·</span>
-              <a class="copy-link" href="#" data-copy="yuenyang@example.com">
-                <i class="bi bi-envelope"></i> Email (click to copy)
-              </a>
-              <span class="sep">·</span>
-              <a href="https://orcid.org/0000-0002-0000-0000" target="_blank" class="text-decoration-none">
-                <i class="bi bi-person-badge"></i> ORCID
-              </a>
-              <span class="sep">·</span>
-              <a href="https://scholar.google.com/" target="_blank" class="text-decoration-none">
-                <i class="bi bi-mortarboard"></i> Google Scholar
-              </a>
+                <p class="text-muted mb-3">
+    具備「<strong>Machine Learning × Computer Vision × 遙測影像分析 × WebGIS 系統落地</strong>」之整合能力，
+    以 <strong>Python</strong> 為主要開發語言，使用 <strong>TensorFlow / Keras</strong> 進行深度學習模型訓練
+    （CNN／YOLO／GAN），並結合 GPU（RTX 4090）進行大尺度資料運算。
+    可自資料流程建置、模型訓練與驗證，
+    至系統部署與平台化，完成政府與產業場域之端到端 AI 解決方案交付。
+</p>
+
+
+                <p class="small mb-0">
+                    📍 臺南，臺灣
+                    <span class="sep">｜</span>
+                    <a href="javascript:void(0)"
+                       class="copy-link"
+                       data-copy="unron0830@gmail.com"
+                       aria-label="複製 Email">
+                        ✉️ unron0830@gmail.com
+                    </a>
+                    <span class="sep">｜</span>
+                    <a href="https://orcid.org/0009-0001-9001-5331"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        <img src="https://orcid.org/assets/vectors/orcid.logo.svg"
+                             alt="ORCID iD"
+                             style="height:22px; vertical-align:middle;">
+                    </a>
+					<span class="sep">｜</span>
+
+				<a href="https://scholar.google.com.tw/citations?user=wD6YyxsAAAAJ&hl=zh-TW"
+   target="_blank"
+   rel="noopener noreferrer"
+   aria-label="Google Scholar">
+    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/googlescholar.svg"
+         alt="Google Scholar"
+         style="height:22px; vertical-align:middle;">
+</a>
+								</p>
             </div>
-          </div>
-          <div class="col-md-2 text-center">
-            <img src="assets/img/logo.png" alt="Lab Logo" class="lab-hero-icon" />
-          </div>
-        </div>
-      </div>
 
-      <div class="row g-4">
-        <div class="col-md-6">
-          <div class="cardx p-4 h-100">
-            <div class="smallcaps">Core Technical Skills</div>
-            <hr class="divider" />
-            <ul class="mb-0">
-              <li>Machine Learning / Deep Learning (YOLO, CNN, cGAN)</li>
-              <li>Python, R, JavaScript, SQL programming</li>
-              <li>Remote sensing image analysis &amp; GIS spatial data processing</li>
-              <li>WebGIS system development (GeoServer, Leaflet, OpenLayers)</li>
-            </ul>
-          </div>
+            <!-- 右：Logo -->
+            <div class="col-md-2 d-none d-md-flex justify-content-center align-items-center">
+                <img src="assets/img/logo.png")"
+                     alt="Yu-En Yang Lab"
+                     class="lab-hero-icon">
+            </div>
         </div>
-        <div class="col-md-6">
-          <div class="cardx p-4 h-100">
-            <div class="smallcaps">Selected Projects</div>
-            <hr class="divider" />
-            <ul class="mb-0">
-              <li>Asbestos building material survey AI detection &amp; WebGIS management system (2021–2025)</li>
-              <li>Conditional GAN (cGAN) for landslide displacement estimation (DoD)</li>
-              <li>Soil &amp; Water Conservation Bureau GBSAR slope monitoring &amp; early warning system (2020–2024)</li>
-            </ul>
-          </div>
+    </section>
+
+    <section class="mb-5">
+        <h3 class="fw-semibold">核心技術能力</h3>
+   <ul class="mb-0">
+    <li>
+        <strong>Machine Learning / AI：</strong>
+        CNN、YOLO、GAN（cGAN）、Random Forest、XGBoost
+        <span class="text-muted">｜Python、TensorFlow / Keras（PyTorch experience）</span>
+    </li>
+    <li>
+        <strong>程式與資料處理：</strong>
+        Python、SQL、C#，
+        大尺度影像處理（40,000+ images）、特徵工程、GPU 加速運算
+    </li>
+    <li>
+        <strong>遙測與 GIS：</strong>
+        Google Earth Engine、QGIS、ArcGIS、UAV 攝影測量
+    </li>
+    <li>
+        <strong>系統開發與部署：</strong>
+        ASP.NET MVC、WebGIS、REST API、模型推論服務整合
+    </li>
+</ul>
+
+    </section>
+
+    <section class="mb-5">
+        <h3 class="fw-semibold">代表性專案</h3>
+        <ul class="mb-0">
+            <li>
+                <strong>含石綿建材 AI 辨識與管理系統（WebGIS + YOLO）</strong><br />
+                建立 YOLO 物件偵測模型，處理 4 萬筆以上 UAV、街景與手機影像，
+                並整合至 WebGIS 平台，支援政府大尺度盤查與決策應用。
+            </li>
+            <li>
+                <strong>cGAN 地形變遷（DoD）與崩塌量體推估</strong><br />
+                以多時期遙測與地形資料建立生成對抗網路模型，
+                支援山崩體積變化分析與災害評估流程。
+            </li>
+            <li>
+                <strong>GBSAR / ArcSAR 邊坡變形監測</strong><br />
+                分析毫米級地表變形資料，支援邊坡穩定監測與預警判斷。
+            </li>
+        </ul>
+    </section>
+
+    <section class="mb-0">
+        <h3 class="fw-semibold">現職經歷</h3>
+        <ul class="mb-0">
+            <li>
+                專案工程師／GIS 顧問（政府委託專案）<br />
+                國立成功大學 衛星資訊中心 博士後研究員<br />
+				國立成功大學 水科技研究中心 博士後研究員
+            </li>
+        </ul>
+    </section>
+
+</div>
+
+
+    <!-- ================= ENGLISH ================= -->
+   <div data-lang-block="en" style="display:none;">
+
+    <section class="mb-5">
+        <div class="row">
+            <!-- Left: Photo -->
+            <div class="col-md-3 text-center mb-3 mb-md-0">
+                <img src="assets/img/profile1.jpg"
+                     alt="Yu-En Yang"
+                     class="img-fluid rounded"
+                     style="max-width:240px; max-height:240px; object-fit:contain;">
+            </div>
+
+            <!-- Center: Text -->
+            <div class="col-md-7">
+                <h1 class="fw-bold mb-2">Yu-En Yang</h1>
+                <p class="lead text-muted mb-1">
+                    Ph.D. in Resource Engineering (Jan 2026)
+                </p>
+                <p class="mb-2">
+                    Satellite Information Center<br />
+                    National Cheng Kung University (NCKU)
+                </p>
+
+               <p class="text-muted mb-3">
+    Ph.D. in Resource Engineering with strong <strong>end-to-end expertise in
+    Machine Learning, Computer Vision, remote sensing analytics, and WebGIS system deployment</strong>.
+    Primary programming language is <strong>Python</strong>, with hands-on experience in
+    <strong>TensorFlow / Keras</strong> (and PyTorch familiarity),
+    GPU-accelerated model training (RTX 4090),
+    and large-scale image datasets.
+    Experienced in building data pipelines, training and validating deep learning models
+    (CNN, YOLO, GAN), and delivering production-ready AI systems
+    for real-world government and industry applications.
+</p>
+
+
+                <p class="small mb-0">
+                    📍 Tainan, Taiwan
+                    <span class="sep">｜</span>
+                    <a href="javascript:void(0)"
+                       class="copy-link"
+                       data-copy="unron0830@gmail.com"
+                       aria-label="Copy Email">
+                        ✉️ unron0830@gmail.com
+                    </a>
+                    <span class="sep">｜</span>
+                    <a href="https://orcid.org/0009-0001-9001-5331"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        <img src="https://orcid.org/assets/vectors/orcid.logo.svg"
+                             alt="ORCID iD"
+                             style="height:22px; vertical-align:middle;">
+                   <a href="https://scholar.google.com.tw/citations?user=wD6YyxsAAAAJ&hl=zh-TW"
+   target="_blank"
+   rel="noopener noreferrer"
+   aria-label="Google Scholar">
+    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/googlescholar.svg"
+         alt="Google Scholar"
+         style="height:22px; vertical-align:middle;">
+</a>
+                </p>
+            </div>
+
+            <!-- Right: Logo -->
+            <div class="col-md-2 d-none d-md-flex justify-content-center align-items-center">
+                <img src="assets/img/logo.png")"
+                     alt="Yu-En Yang Lab"
+                     class="lab-hero-icon">
+            </div>
         </div>
-        <div class="col-12">
-          <div class="cardx p-4">
-            <div class="smallcaps">Professional Experience</div>
-            <hr class="divider" />
-            <ul class="mb-0">
-              <li>Research Assistant, Satellite Information Research Center, NCKU (2020–present)</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div><!-- /en -->
+    </section>
 
-  </div>
-</main>
+    <section class="mb-5">
+        <h3 class="fw-semibold">Core Technical Skills</h3>
+        <ul class="mb-0">
+            <li><strong>Machine Learning / AI:</strong> CNN, YOLO, GAN, Random Forest, XGBoost</li>
+            <li><strong>Programming & Data Processing:</strong> Python, SQL, C#, large-scale image processing, feature engineering</li>
+            <li><strong>Remote Sensing & GIS:</strong> Google Earth Engine, QGIS, ArcGIS, UAV photogrammetry</li>
+            <li><strong>Systems & Deployment:</strong> ASP.NET MVC, WebGIS, REST APIs</li>
+        </ul>
+    </section>
 
-<footer>
-  <div class="container">
-    &copy; 2026 Yu-En Yang &middot; Powered by GitHub Pages
-  </div>
-</footer>
+    <section class="mb-5">
+        <h3 class="fw-semibold">Selected Projects</h3>
+        <ul class="mb-0">
+		 
+            <li>
+                <strong>AI-based Asbestos Mapping and Management System (WebGIS + YOLO)</strong><br />
+                Developed YOLO-based object detection models using 40,000+ labeled images
+                from UAV, street-view, and mobile sources.
+                Integrated AI inference results into a WebGIS platform to support
+                large-scale screening and inspection planning for local governments.
+            </li>
+            <li>
+                <strong>Landslide Volume Estimation Using Conditional GAN</strong><br />
+                Applied conditional GAN models to estimate DEM of Difference (DoD)
+                from multi-temporal remote sensing and terrain data,
+                supporting landslide volume analysis and hazard assessment workflows.
+            </li>
+            <li>
+                <strong>GBSAR / ArcSAR Slope Deformation Monitoring</strong><br />
+                Analyzed millimeter-level ground deformation data
+                to support slope stability monitoring and early warning decision-making.
+            </li>
+        </ul>
+    </section>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="assets/js/main.js"></script>
+    <section class="mb-0">
+        <h3 class="fw-semibold">Professional Experience</h3>
+        <ul class="mb-0">
+            <li>
+                Project Engineer & GIS Consultant (Government-funded Projects)<br />
+                Satellite Information Center, National Cheng Kung University
+            </li>
+        </ul>
+    </section>
+
+</div>
+    </div>
+  </main>
+  <footer>© 2026 Yu-En Yang</footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
+

@@ -1,85 +1,46 @@
-document.addEventListener('DOMContentLoaded', function () {
-
-  // === LANGUAGE TOGGLE ===
-  var langBtns = document.querySelectorAll('[data-lang-btn]');
-
+﻿document.addEventListener("DOMContentLoaded", function() {
+  const langBtns = document.querySelectorAll("[data-lang-btn]");
   function setLang(lang) {
-    document.querySelectorAll('[data-lang-block]').forEach(function (el) {
-      el.style.display = (el.dataset.langBlock === lang) ? '' : 'none';
+    document.querySelectorAll("[data-lang-block]").forEach(el => {
+      el.style.display = el.dataset.langBlock === lang ? "" : "none";
     });
-    langBtns.forEach(function (btn) {
-      btn.classList.toggle('active', btn.dataset.langBtn === lang);
-    });
-    localStorage.setItem('lang', lang);
+    langBtns.forEach(btn => btn.classList.toggle("active", btn.dataset.langBtn === lang));
+    localStorage.setItem("lang", lang);
+  }
+  if (langBtns.length) {
+    setLang(localStorage.getItem("lang") || "zh");
+    langBtns.forEach(btn => btn.addEventListener("click", () => setLang(btn.dataset.langBtn)));
   }
 
-  var savedLang = localStorage.getItem('lang') || 'zh';
-  setLang(savedLang);
+  const budgetBtns = document.querySelectorAll("[data-budget-btn]");
+  if (budgetBtns.length) {
+    budgetBtns.forEach(btn => btn.addEventListener("click", function() {
+      const show = this.dataset.budgetBtn === "show";
+      document.querySelectorAll("[data-budget]").forEach(el => el.style.display = show ? "" : "none");
+      budgetBtns.forEach(b => b.classList.toggle("active", b === this));
+    }));
+  }
 
-  langBtns.forEach(function (btn) {
-    btn.addEventListener('click', function () { setLang(btn.dataset.langBtn); });
-  });
-
-  // === BUDGET TOGGLE ===
-  document.querySelectorAll('[data-budget-btn]').forEach(function (btn) {
-    btn.addEventListener('click', function () {
-      var show = this.dataset.budgetBtn === 'show';
-      document.querySelectorAll('[data-budget]').forEach(function (el) {
-        el.style.display = show ? '' : 'none';
-      });
-      document.querySelectorAll('[data-budget-btn]').forEach(function (b) {
-        b.classList.toggle('active', b === btn);
-      });
-    });
-  });
-
-  // === COPY EMAIL ===
-  document.querySelectorAll('.copy-link').forEach(function (el) {
-    el.addEventListener('click', function (e) {
+  document.querySelectorAll(".copy-link").forEach(el => {
+    el.addEventListener("click", async (e) => {
       e.preventDefault();
-      var text = this.dataset.copy;
-      if (navigator.clipboard) {
-        navigator.clipboard.writeText(text).then(function () { showToast('Email copied!'); });
-      } else {
-        var ta = document.createElement('textarea');
-        ta.value = text;
-        document.body.appendChild(ta);
-        ta.select();
-        document.execCommand('copy');
-        document.body.removeChild(ta);
-        showToast('Email copied!');
-      }
+      const text = el.dataset.copy || "";
+      try { await navigator.clipboard.writeText(text); toast("Email copied"); }
+      catch { toast("Copy failed"); }
     });
   });
 
-  // === DARK MODE ===
-  var themeToggle = document.getElementById('themeToggle');
-  if (themeToggle) {
-    function applyTheme(theme) {
-      document.documentElement.setAttribute('data-bs-theme', theme);
-      themeToggle.textContent = theme === 'dark' ? '☀️' : '🌙';
-      localStorage.setItem('theme', theme);
+  function toast(msg) {
+    let t = document.getElementById("_toast");
+    if (!t) {
+      t = document.createElement("div");
+      t.id = "_toast";
+      t.style.cssText = "position:fixed;bottom:1rem;left:50%;transform:translateX(-50%);background:#111827;color:#fff;padding:.45rem .8rem;border-radius:.45rem;z-index:9999;opacity:0;transition:opacity .2s;";
+      document.body.appendChild(t);
     }
-    var savedTheme = localStorage.getItem('theme') || 'light';
-    applyTheme(savedTheme);
-    themeToggle.addEventListener('click', function () {
-      var current = document.documentElement.getAttribute('data-bs-theme') || 'light';
-      applyTheme(current === 'dark' ? 'light' : 'dark');
-    });
+    t.textContent = msg;
+    t.style.opacity = "1";
+    clearTimeout(t._h);
+    t._h = setTimeout(() => t.style.opacity = "0", 1200);
   }
-
 });
-
-function showToast(msg) {
-  var t = document.getElementById('_toast');
-  if (!t) {
-    t = document.createElement('div');
-    t.id = '_toast';
-    t.style.cssText = 'position:fixed;bottom:1.5rem;left:50%;transform:translateX(-50%);background:#1f2937;color:#fff;padding:.5rem 1.25rem;border-radius:.5rem;z-index:9999;font-size:.875rem;pointer-events:none;transition:opacity .3s;';
-    document.body.appendChild(t);
-  }
-  t.textContent = msg;
-  t.style.opacity = '1';
-  clearTimeout(t._to);
-  t._to = setTimeout(function () { t.style.opacity = '0'; }, 1800);
-}
