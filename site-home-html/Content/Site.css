@@ -1,0 +1,323 @@
+﻿:root {
+    --bg-main: #f7f9fc;
+    --bg-card: #ffffff;
+    --bg-soft: #f1f5fb;
+    --text-main: #0f172a; /* 深藍黑 */
+    --text-muted: #475569; /* 冷灰 */
+    --text-light: #64748b;
+    --primary: #2563eb; /* 科技藍 */
+    --primary-soft: #dbeafe;
+    --accent: #06b6d4; /* 青藍 */
+    --border: #e5e7eb;
+}
+
+/* ---------- Base ---------- */
+body {
+    background: linear-gradient(180deg, #ffffff 0%, var(--bg-main) 100%);
+    color: var(--text-main);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans TC", Roboto, Helvetica, Arial, sans-serif;
+}
+
+a {
+    color: var(--primary);
+}
+
+    a:hover {
+        color: #1d4ed8;
+    }
+
+.text-muted2 {
+    color: var(--text-muted) !important;
+}
+
+.smallcaps {
+    font-size: .75rem;
+    letter-spacing: .12em;
+    color: var(--text-light);
+}
+
+/* ---------- Navbar ---------- */
+.navbar {
+    background: rgba(255,255,255,.85);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border);
+}
+
+.navbar-brand {
+    color: var(--text-main) !important;
+}
+
+.navbar .nav-link {
+    color: var(--text-muted);
+    font-weight: 500;
+}
+
+    .navbar .nav-link.active {
+        color: var(--primary);
+        font-weight: 600;
+    }
+
+.brand-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--primary);
+    display: inline-block;
+    margin-right: .4rem;
+}
+
+/* ---------- Sections ---------- */
+
+
+.divider {
+    height: 1px;
+    background: var(--border);
+    margin: 3rem 0;
+}
+
+/* ---------- Hero ---------- */
+.hero {
+    background: linear-gradient(180deg, #ffffff, var(--bg-soft));
+    border: 1px solid var(--border);
+    border-radius: 1.25rem;
+    padding: 2.75rem;
+}
+
+/* ---------- Cards ---------- */
+.cardx {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 1.25rem;
+    box-shadow: 0 12px 30px rgba(15,23,42,.05);
+}
+
+/* ---------- Badges ---------- */
+.badge-soft {
+    background: var(--primary-soft);
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.badge-soft2 {
+    background: #ecfeff;
+    color: var(--accent);
+    font-weight: 600;
+}
+
+/* ---------- Buttons ---------- */
+.btn-accent {
+    background: var(--primary);
+    color: #fff;
+    border-radius: .75rem;
+    padding: .6rem 1.1rem;
+    font-weight: 600;
+}
+
+    .btn-accent:hover {
+        background: #1d4ed8;
+        color: #fff;
+    }
+
+.btn-ghost {
+    background: #ffffff;
+    border: 1px solid var(--border);
+    color: var(--text-main);
+    border-radius: .75rem;
+    padding: .6rem 1.1rem;
+}
+
+    .btn-ghost:hover {
+        background: var(--bg-soft);
+    }
+
+/* ---------- Skills / Tools ---------- */
+.tool-strip {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px 18px;
+}
+
+.tool-logo {
+    height: 42px;
+    padding: 10px 14px;
+    border-radius: 14px;
+    background: #ffffff;
+    border: 1px solid var(--border);
+    filter: grayscale(1);
+    transition: all .2s ease;
+}
+
+    .tool-logo:hover {
+        filter: none;
+        transform: translateY(-1px);
+        box-shadow: 0 8px 20px rgba(15,23,42,.08);
+    }
+
+.tool-badge {
+    padding: 9px 14px;
+    border-radius: 999px;
+    background: var(--bg-soft);
+    border: 1px solid var(--border);
+    font-weight: 600;
+    color: var(--text-main);
+}
+
+.proj-thumb {
+    width: 100%;
+    height: 190px; /* 你可改 160 / 180 / 220 */
+    object-fit: cover; /* 關鍵：裁切填滿 */
+    border-radius: 6px;
+    display: block;
+    background: #f2f2f2; /* 圖片載入前的底色 */
+}
+
+/* video needs object-fit too */
+video.proj-thumb {
+    height: 190px;
+    object-fit: cover;
+}
+/* ---------- Footer ---------- */
+footer {
+    border-top: 1px solid var(--border);
+    background: #ffffff;
+    padding: 1.5rem 0;
+    color: var(--text-light);
+}
+
+/* ---------- Language pill ---------- */
+.lang-pill .btn {
+    border: 1px solid var(--border);
+    background: #fff;
+    color: var(--text-muted);
+}
+
+    .lang-pill .btn.active {
+        background: var(--primary-soft);
+        color: var(--primary);
+        font-weight: 600;
+    }
+/* ===== Banner Carousel ===== */
+.banner-wrap {
+    border: 1px solid var(--border, #e5e7eb);
+    border-radius: 1.25rem;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 12px 30px rgba(15,23,42,.05);
+}
+
+.banner-img {
+    height: 320px; /* desktop height */
+    object-fit: cover;
+    object-position: center;
+}
+
+.banner-overlay {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: linear-gradient( 90deg, rgba(255,255,255,.60) 0%, rgba(255,255,255,.25) 45%, rgba(255,255,255,.10) 100% );
+}
+
+@media (max-width: 768px) {
+    .banner-img {
+        height: 220px;
+    }
+}
+/* Projects thumbnails: unify layout */
+/* 固定高度的 16:9 顯示框（Awards 專用） */
+/* 統一圖片顯示框（不裁切） */
+.award-img-wrap {
+    width: 100%;
+    height: 320px; /* ⭐ 固定高度：可自行調 280 / 300 / 360 */
+    background: #f7f7f7; /* 淡底色，讓 contain 不突兀 */
+    border-radius: .5rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    /* 圖片等比例縮放，不裁切 */
+    .award-img-wrap img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain; /* ⭐ 關鍵 */
+        display: block;
+    }
+.copy-link {
+    color: #0a66c2; /* 超連結藍（可改成你網站主色） */
+    text-decoration: underline;
+    cursor: pointer;
+    font: inherit;
+}
+
+    .copy-link:hover {
+        color: #084b8a;
+    }
+
+.lab-hero-icon {
+    max-width: 240px; /* 不要超過這個 */
+    width: 100%;
+    opacity: 0.9;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+    .lab-hero-icon:hover {
+        transform: scale(1.03);
+        opacity: 1;
+    }/* ================================
+   Hackathon Carousel - FIXED
+   ================================ */
+
+/* 1️⃣ 所有實際撐高度的層級都鎖死 */
+#hackathonCarousel .carousel-inner,
+#hackathonCarousel .carousel-item,
+#hackathonCarousel .award-img-wrap {
+    height: 360px;
+}
+
+/* 2️⃣ 圖片等比例顯示，不裁切 */
+#hackathonCarousel img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    background-color: #f8f9fa;
+}
+
+/* 📱 手機版高度 */
+@media (max-width: 768px) {
+    #hackathonCarousel .carousel-inner,
+    #hackathonCarousel .carousel-item,
+    #hackathonCarousel .award-img-wrap {
+        height: 240px;
+    }
+}
+
+/* ================================
+   Carousel Controls（深色箭頭）
+   ================================ */
+
+/* 按鈕區域 */
+#hackathonCarousel .carousel-control-prev,
+#hackathonCarousel .carousel-control-next {
+    width: 48px;
+    z-index: 10;
+}
+
+/* ✅ 最穩定作法：直接把原本白色 SVG 轉深色 */
+#hackathonCarousel .carousel-control-prev-icon,
+#hackathonCarousel .carousel-control-next-icon {
+    filter: invert(1) grayscale(1) brightness(0.35);
+}
+
+/* ================================
+   Indicators & spacing
+   ================================ */
+
+#hackathonCarousel .carousel-indicators {
+    bottom: -28px;
+}
+
+#hackathonCarousel {
+    margin-bottom: 2.5rem;
+}
