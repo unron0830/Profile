@@ -1,0 +1,295 @@
+﻿<!doctype html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>opportunities - Yu-En Yang</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <style>
+:root { --bg:#f7f8fb; --card:#fff; --text:#1f2937; --muted:#6b7280; --line:#e5e7eb; --brand:#0f766e; }
+*{box-sizing:border-box}
+body{margin:0;font-family:"Noto Sans TC","Segoe UI",sans-serif;background:var(--bg);color:var(--text)}
+.container{max-width:1080px;margin:0 auto;padding:1.2rem}
+.topbar{position:sticky;top:0;z-index:20;background:#ffffffd9;backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+.topbar .container{display:flex;flex-wrap:wrap;gap:.8rem;align-items:center;justify-content:space-between}
+.brand{font-weight:800;color:var(--brand);text-decoration:none}
+.nav{display:flex;gap:.4rem;flex-wrap:wrap}
+.nav a{text-decoration:none;color:var(--text);padding:.35rem .6rem;border:1px solid transparent;border-radius:.45rem;font-size:.92rem}
+.nav a.active{border-color:var(--line);background:#f3f4f6}
+.tools{display:flex;gap:.4rem;align-items:center}
+button.lang-btn,button.budget-btn{border:1px solid var(--line);background:#fff;color:var(--text);border-radius:.45rem;padding:.25rem .55rem;cursor:pointer}
+button.active{background:#eef2ff;border-color:#c7d2fe}
+main{padding:1rem 0 2rem}
+.cardx{background:var(--card);border:1px solid var(--line);border-radius:.8rem;padding:1rem;margin-bottom:1rem}
+.smallcaps{color:var(--muted);font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;font-weight:700}
+h1,h2,h3{margin-top:.2rem}
+.text-muted2{color:var(--muted)}
+.divider{border-top:1px solid var(--line);margin:1.2rem 0}
+.copy-link{cursor:pointer}
+.proj-thumb,.lab-hero-icon,.award-img-wrap img,.img-fluid{max-width:100%;height:auto;border-radius:.5rem}
+.sep{color:var(--muted);margin:0 .4rem}
+footer{border-top:1px solid var(--line);color:var(--muted);text-align:center;padding:1rem 0 2rem;font-size:.85rem}
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="container">
+      <a class="brand" href="index.html">Yu-En Yang</a>
+      <nav class="nav">
+<a href='index.html'>About</a>
+<a href='research.html'>Research</a>
+<a href='publications.html'>Publications</a>
+<a href='projects.html'>Projects</a>
+<a href='honors.html'>Honors</a>
+<a href='teaching.html'>Teaching</a>
+<a href='opportunities.html' class="active">Opportunities</a>
+<a href='contact.html'>Contact</a>
+      </nav>
+      <div class="tools">
+        <button class="lang-btn" data-lang-btn="zh">中文</button>
+        <button class="lang-btn" data-lang-btn="en">EN</button>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+<!-- Header -->
+        <div class="smallcaps">OPPORTUNITIES</div>
+
+        <!-- 中文 -->
+        <div data-lang-block="zh">
+            <h1 class="h2 mb-1">合作邀請</h1>
+
+            <div class="text-muted2 mt-2">
+                我目前正在尋找「研究 / 專案 / 資料」合作夥伴，主題聚焦於災害監測、地形變遷（DoD）與 AI + WebGIS 整合。
+                亦可擔任 <strong>遠程研究助理（Remote RA）</strong> 或 <strong>博士後研究（Postdoc）</strong>，協助方法開發、資料流程與系統落地。
+            </div>
+        </div>
+
+        <!-- English -->
+        <div data-lang-block="en" style="display:none;">
+            <h1 class="h2 mb-1">Collaboration Opportunities</h1>
+
+            <div class="text-muted2 mt-2">
+                I am currently seeking collaborators for <strong>research</strong>, <strong>projects</strong>, and <strong>data partnerships</strong>, with a focus on
+                disaster monitoring, terrain change estimation (<strong>DoD</strong>), and end-to-end integration of <strong>AI + WebGIS</strong>.
+                I am also open to <strong>Remote Research Assistant (RA)</strong> and <strong>Postdoctoral</strong> opportunities, supporting method development,
+                data pipelines, model training/inference, and system deployment.
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="row g-4">
+            <!-- What I can help with -->
+            <div class="col-lg-6">
+                <div class="cardx p-4 h-100">
+
+                    <!-- 中文 -->
+                    <div data-lang-block="zh">
+                        <h2 class="h5 mb-2">我可以協助的面向</h2>
+                        <ul class="text-muted2 mb-0">
+                            <li>衛星影像雙時相差異分析（DoD）與災後判釋流程建置（Google Earth Engine、Python）。</li>
+                            <li>AI 模型訓練與部署整合：YOLO 物件偵測、CNN / cGAN 影像建模與推論流程。</li>
+                            <li>WebGIS 平台開發與 GeoServer 服務建置（ASP.NET MVC、SQL、GeoServer）。</li>
+                            <li>
+                                客製化問卷系統開發與資料庫建置（ASP.NET MVC、SQL），實際案例：
+                                <ul class="mt-1">
+                                    <li>
+                                        <a href="https://minnan.yuscope.com/"
+                                           target="_blank" rel="noopener noreferrer">
+                                            臺語能力調查平台
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://yolocheckgt.yuscope.com/"
+                                           target="_blank" rel="noopener noreferrer">
+                                            YOLO 地真檢核系統
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://asbestosgis.yuscope.com/Home/Index?ReturnUrl=%2f"
+                                           target="_blank" rel="noopener noreferrer">
+                                            石綿建材管理平台
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+
+
+                            <li>政府／產業專案執行：需求盤點、成果報告撰寫、決策支援儀表板開發。</li>
+                        </ul>
+                    </div>
+
+                    <!-- English -->
+                    <div data-lang-block="en" style="display:none;">
+                        <h2 class="h5 mb-2">What I Can Contribute</h2>
+                        <ul class="text-muted2 mb-0">
+                            <li>Bitemporal satellite change analysis (DoD) and post-disaster interpretation workflows (Google Earth Engine, Python).</li>
+                            <li>AI pipeline integration: YOLO object detection, CNN/cGAN modeling, training, deployment, and inference.</li>
+                            <li>WebGIS system development and GeoServer service setup (ASP.NET MVC, SQL, GeoServer).</li>
+                            <li>
+                                Custom survey system development and database implementation (ASP.NET MVC, SQL), selected deployed systems:
+                                <ul class="mt-1">
+                                    <li>
+                                        <a href="https://minnan.yuscope.com/"
+                                           target="_blank" rel="noopener noreferrer">
+                                            Taiwanese Language Proficiency Survey Platform
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://yolocheckgt.yuscope.com/"
+                                           target="_blank" rel="noopener noreferrer">
+                                            YOLO-Based Ground Truth Validation System
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://asb.geo-resources.tw/Home/Index?ReturnUrl=%2f"
+                                           target="_blank" rel="noopener noreferrer">
+                                            Asbestos Building Material Management Platform
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>Government/industry projects: requirements scoping, technical reporting, and decision-support dashboards.</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- What I'm looking for -->
+            <div class="col-lg-6">
+                <div class="cardx p-4 h-100">
+
+                    <!-- 中文 -->
+                    <div data-lang-block="zh">
+                        <h2 class="h5 mb-2">我正在尋找的合作</h2>
+                        <ul class="text-muted2 mb-0">
+                            <li><strong>研究合作：</strong>山崩監測、DoD、生成式模型、雷達/遙測整合與方法驗證。</li>
+                            <li><strong>政府/產業合作：</strong>災害監測、環境治理、巡查與風險管理系統落地。</li>
+                            <li><strong>資料合作：</strong>跨源影像、標註資料、時序 DEM / LiDAR、現地量測或案例資料對接。</li>
+                            <li><strong>共同產出：</strong>paper / system / dashboard / model（可依需求彈性規劃）。</li>
+                            <li><strong>職務型合作：</strong>遠程 RA / Postdoc（研究或系統導向皆可）。</li>
+                        </ul>
+                    </div>
+
+                    <!-- English -->
+                    <div data-lang-block="en" style="display:none;">
+                        <h2 class="h5 mb-2">What I’m Looking For</h2>
+                        <ul class="text-muted2 mb-0">
+                            <li><strong>Research collaboration:</strong> landslide monitoring, DoD, generative models, radar/remote sensing integration, and validation.</li>
+                            <li><strong>Government/industry collaboration:</strong> disaster monitoring, environmental governance, inspection workflows, and risk-management systems.</li>
+                            <li><strong>Data partnership:</strong> multi-source imagery, labeled datasets, time-series DEM/LiDAR, in-situ measurements, or case study data.</li>
+                            <li><strong>Joint outputs:</strong> papers / systems / dashboards / models (flexible depending on needs).</li>
+                            <li><strong>Role-based opportunities:</strong> Remote RA / Postdoc (research- or system-oriented).</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- How to start -->
+        <div class="cardx p-4">
+
+            <!-- 中文 -->
+            <div data-lang-block="zh">
+                <h2 class="h5 mb-2">如何開始合作</h2>
+                <div class="text-muted2">
+                    你只要寄一封簡單的合作訊息即可（不用寫很長）：<br />
+                    1) 你手上有什麼資料 / 想解決什麼問題<br />
+                    2) 希望成果形式（paper / 系統 / 儀表板 / 模型）<br />
+                    3) 時程、合作方式（共同研究 / 委託 / 顧問 / 技術支援）<br />
+                </div>
+
+                <div class="mt-3 d-flex flex-wrap gap-2">
+                    <a class="btn btn-accent" href="contact.html">聯絡我</a>
+                </div>
+
+                <div class="text-muted2 small mt-2">
+                    我通常會在 1–3 天內回覆，並先安排一個 20–30 分鐘的線上討論確認方向。
+                </div>
+            </div>
+
+            <!-- English -->
+            <div data-lang-block="en" style="display:none;">
+                <h2 class="h5 mb-2">How to Get Started</h2>
+                <div class="text-muted2">
+                    A short message is enough (no need to write a long email):<br />
+                    1) What data you have / what problem you want to solve<br />
+                    2) Desired outcome (paper / system / dashboard / model)<br />
+                    3) Timeline and collaboration mode (joint research / contract / consulting / technical support)<br />
+                </div>
+
+                <div class="mt-3 d-flex flex-wrap gap-2">
+                    <a class="btn btn-accent" href="contact.html">Contact Me</a>
+                </div>
+
+                <div class="text-muted2 small mt-2">
+                    I usually reply within 1–3 days and suggest a 20–30 minute online call to align on scope and next steps.
+                </div>
+            </div>
+
+        </div>
+    </div>
+  </main>
+  <footer>© 2026 Yu-En Yang</footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+document.addEventListener("DOMContentLoaded", function() {
+  const langBtns = document.querySelectorAll("[data-lang-btn]");
+  function setLang(lang) {
+    document.querySelectorAll("[data-lang-block]").forEach(el => {
+      el.style.display = el.dataset.langBlock === lang ? "" : "none";
+    });
+    langBtns.forEach(btn => btn.classList.toggle("active", btn.dataset.langBtn === lang));
+    localStorage.setItem("lang", lang);
+  }
+  if (langBtns.length) {
+    setLang(localStorage.getItem("lang") || "zh");
+    langBtns.forEach(btn => btn.addEventListener("click", () => setLang(btn.dataset.langBtn)));
+  }
+
+  const budgetBtns = document.querySelectorAll("[data-budget-btn]");
+  if (budgetBtns.length) {
+    budgetBtns.forEach(btn => btn.addEventListener("click", function() {
+      const show = this.dataset.budgetBtn === "show";
+      document.querySelectorAll("[data-budget]").forEach(el => el.style.display = show ? "" : "none");
+      budgetBtns.forEach(b => b.classList.toggle("active", b === this));
+    }));
+  }
+
+  document.querySelectorAll(".copy-link").forEach(el => {
+    el.addEventListener("click", async (e) => {
+      e.preventDefault();
+      const text = el.dataset.copy || "";
+      try { await navigator.clipboard.writeText(text); toast("Email copied"); }
+      catch { toast("Copy failed"); }
+    });
+  });
+
+  function toast(msg) {
+    let t = document.getElementById("_toast");
+    if (!t) {
+      t = document.createElement("div");
+      t.id = "_toast";
+      t.style.cssText = "position:fixed;bottom:1rem;left:50%;transform:translateX(-50%);background:#111827;color:#fff;padding:.45rem .8rem;border-radius:.45rem;z-index:9999;opacity:0;transition:opacity .2s;";
+      document.body.appendChild(t);
+    }
+    t.textContent = msg;
+    t.style.opacity = "1";
+    clearTimeout(t._h);
+    t._h = setTimeout(() => t.style.opacity = "0", 1200);
+  }
+});
+  </script>
+</body>
+</html>
